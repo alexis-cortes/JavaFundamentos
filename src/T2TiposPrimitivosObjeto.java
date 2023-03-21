@@ -55,4 +55,23 @@ public class T2TiposPrimitivosObjeto {
     //Conversiones Explícitas (Utilizacion del Casting):
     double num4 = 5.4f;
     int num5=(int)num4;//casting
+
+    //Reglas de conversion implícitas:
+    //El tipo de destino tiene que ser igual o de mayor tamaño que el de origen.
+    //Excepciones:
+    //El tipo de origen es númerico y el destino es char.
+    byte dByte = 10;
+    //char dChar = dByte; // error
+    //El tipo de destino es entero y el origen es decimal.
+    float dFloat=3.4f;
+    //long dlong=dFloat; //error
+
+    //Cuando no sea posible la conversión implícita, siempre se podrá realizar explícitamente.
+
+    char dChar=(char)dByte;
+    long dlong=(long)dFloat;
+
+
+    //No se puede hacer conversión implícita ni explícita entre tipos primitivos y objetos.
+
 }
